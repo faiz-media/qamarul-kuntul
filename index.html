@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QAMARUL KUNTUL | Elite Gaming</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+background:#030712;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+}
+
+body::before{
+content:'';
+position:absolute;
+width:200%;
+height:200%;
+background:
+radial-gradient(circle,#00ffff15 0%,transparent 30%),
+radial-gradient(circle,#00bfff20 0%,transparent 25%);
+animation:rotate 25s linear infinite;
+}
+
+@keyframes rotate{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+
+.grid{
+position:absolute;
+width:100%;
+height:100%;
+background-image:
+linear-gradient(rgba(0,255,255,.08) 1px, transparent 1px),
+linear-gradient(90deg, rgba(0,255,255,.08) 1px, transparent 1px);
+background-size:50px 50px;
+}
+
+.container{
+position:relative;
+z-index:10;
+text-align:center;
+padding:50px;
+backdrop-filter:blur(15px);
+background:rgba(255,255,255,.03);
+border:1px solid rgba(0,255,255,.25);
+border-radius:25px;
+box-shadow:
+0 0 20px rgba(0,255,255,.2),
+0 0 80px rgba(0,255,255,.1);
+}
+
+.tag{
+color:#00ffff;
+font-size:14px;
+letter-spacing:6px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:90px;
+font-weight:900;
+color:white;
+text-shadow:
+0 0 10px #00ffff,
+0 0 25px #00ffff,
+0 0 50px #00ffff;
+animation:glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+from{transform:scale(1);}
+to{transform:scale(1.03);}
+}
+
+.subtitle{
+color:#cbd5e1;
+margin-top:15px;
+font-size:20px;
+letter-spacing:4px;
+}
+
+.status{
+margin-top:30px;
+color:#00ff88;
+font-size:14px;
+letter-spacing:4px;
+}
+
+.button{
+display:inline-block;
+margin-top:35px;
+padding:16px 40px;
+text-decoration:none;
+color:#00ffff;
+border:2px solid #00ffff;
+border-radius:50px;
+transition:.3s;
+font-weight:700;
+}
+
+.button:hover{
+background:#00ffff;
+color:#000;
+box-shadow:
+0 0 20px #00ffff,
+0 0 50px #00ffff;
+}
+
+.corner{
+position:absolute;
+width:120px;
+height:120px;
+border:3px solid #00ffff;
+opacity:.3;
+}
+
+.c1{
+top:20px;
+left:20px;
+border-right:none;
+border-bottom:none;
+}
+
+.c2{
+bottom:20px;
+right:20px;
+border-left:none;
+border-top:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="grid"></div>
+
+<div class="corner c1"></div>
+<div class="corner c2"></div>
+
+<div class="container">
+<div class="tag">ELITE GAMING NETWORK</div>
+
+<h1>QAMARUL<br>KUNTUL</h1>
+
+<div class="subtitle">
+WELCOME TO THE ARENA
+</div>
+
+<div class="status">
+● ONLINE • READY TO PLAY
+</div>
+
+<a href="#" class="button">ENTER ARENA</a>
+</div>
+
+</body>
+</html>
